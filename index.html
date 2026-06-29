@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宮本 輝｜Portfolio — Web / Graphic Design</title>
+  <meta name="description" content="宮本 輝のポートフォリオ。Webデザイン、ポスターなどの制作物を掲載しています。">
+  <meta name="theme-color" content="#1c1815">
+
+  <!-- OGP（SNSでシェアされたときの表示。本番ではURLと画像を実在のものに） -->
+  <meta property="og:title" content="宮本 輝｜Portfolio">
+  <meta property="og:description" content="Web / Graphic Design Portfolio">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="ホームへ">
+      <span class="brand__seal" aria-hidden="true">H</span>
+      <span class="brand__name">Hikaru&nbsp;Miyamoto</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="primaryNav" aria-label="メインナビゲーション">
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO / TOP ============ -->
+    <section class="hero" id="top">
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.05s">Hikaru Miyamoto</span>
+        <span class="reveal" style="--d:.15s">Portfolio</span>
+      </h1>
+      <p class="hero__lead reveal" style="--d:.3s">
+        山口の専門学校でデザインとコーディングを学ぶ、宮本 輝のポートフォリオです。<br>
+        ポスター・ブランディング・Webなど授業や自主学習、コンテストに向けてつくったものを並べています。
+      </p>
+      <a class="hero__cta reveal" style="--d:.4s" href="#works">作品を見る <span aria-hidden="true">&darr;</span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <span class="section__index" aria-hidden="true">02</span>
+        <h2 class="section__title">Profile</h2>
+        <span class="section__sub">プロフィール</span>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__photo">
+          <img src="img/17_宮本　輝.jpg" alt="宮本 輝のプロフィール写真">
+        </div>
+        <div class="about__body">
+          <p class="about__name">宮本&nbsp;輝 / <span class="about__romaji">Hikaru&nbsp;Miyamoto</span></p>
+          <p class="about__text">
+            2006年、山口県生まれ。YIC情報ビジネス専門学校で、HTML / CSS・Illustrator・Photoshop など、
+            デザインとコーディングの両方を学んでいます。
+          </p>
+          <p class="about__text">
+            ブランドの世界観づくりと、それを画面の上で動くかたちにすることに興味があります。
+            ポスターからWebサイトまで、ジャンルを横断してつくるのが好きです。
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILL ============ -->
+    <section class="section skill" id="skill">
+      <div class="section__head">
+        <span class="section__index" aria-hidden="true">03</span>
+        <h2 class="section__title">Skill</h2>
+        <span class="section__sub">できること</span>
+      </div>
+
+      <div class="skill__grid">
+        <article class="skill__card reveal">
+          <h3 class="skill__cat">Design</h3>
+          <ul class="skill__tags">
+            <li>Illustrator</li><li>Photoshop</li><li>Figma</li><li>XD</li>
+          </ul>
+        </article>
+        <article class="skill__card reveal" style="--d:.1s">
+          <h3 class="skill__cat">Coding</h3>
+          <ul class="skill__tags">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+        </article>
+        <article class="skill__card skill__qual reveal" style="--d:.2s">
+          <h3 class="skill__cat">Qualification</h3>
+          <ul class="skill__qual-list">
+            <li>Webデザイナー検定 ベーシック</li>
+            <li>Webクリエイター能力認定試験 HTML5 エキスパート</li>
+            <li>Illustratorクリエイター能力検定試験 スタンダード</li>
+            <li>色彩検定 3級</li>
+            <li>Photoshopクリエイター能力認定試験 スタンダード</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ WORKS ============ -->
+    <section class="section works" id="works">
+      <div class="section__head">
+        <span class="section__index" aria-hidden="true">04</span>
+        <h2 class="section__title">Works</h2>
+        <span class="section__sub">制作物</span>
+      </div>
+
+      <ul class="works__grid">
+        <li class="work reveal">
+          <button class="work__thumb" data-full="img/toki.png" data-link="https://miyahikaru25-lab.github.io/toki/index.html" aria-label="架空日本酒ブランドサイト「刻-TOKI」を拡大表示">
+            <img src="img/toki.png" alt="架空日本酒ブランドサイト「刻-TOKI」のファーストビュー" loading="lazy">
+          </button>
+          <div class="work__meta">
+            <span class="work__tag">Web / Coding</span>
+            <h3 class="work__title">架空日本酒ブランドサイト「刻-TOKI」</h3>
+            <p class="work__desc">架空の日本酒ブランドのブランドサイトをデザインから実装まで制作しました。</p>
+          </div>
+        </li>
+
+        <li class="work reveal" style="--d:.08s">
+          <button class="work__thumb" data-full="img/final_hero.png" data-link="https://miyahikaru25-lab.github.io/Matcha/" aria-label="架空のお茶ブランドサイトを拡大表示">
+            <img src="img/final_hero.png" alt="架空のお茶ブランドのWebサイト『深みが違う、本物の抹茶』のファーストビュー" loading="lazy">
+          </button>
+          <div class="work__meta">
+            <span class="work__tag">Web / Coding</span>
+            <h3 class="work__title">架空お茶ブランドのサイト</h3>
+            <p class="work__desc">抹茶ブランドのLPをデザインから実装まで。和の余白と写真で高級感を表現しました。</p>
+          </div>
+        </li>
+
+        <li class="work reveal" style="--d:.16s">
+          <button class="work__thumb" data-full="img/work-rethink.jpg" aria-label="Rethinkデザインコンテスト作品を拡大表示">
+            <img src="img/work-rethink.jpg" alt="Rethinkデザインコンテスト応募ポスター『風が描いた台地／水が刻んだ記憶』" loading="lazy">
+          </button>
+          <div class="work__meta">
+            <span class="work__tag">Graphic / Poster</span>
+            <h3 class="work__title">Rethink デザインコンテスト</h3>
+            <p class="work__desc">地形と水の記憶をテーマにした観光ポスター。上下反転の構図で地と水を一枚に。</p>
+          </div>
+        </li>
+
+        <li class="work reveal" style="--d:.24s">
+          <button class="work__thumb" data-full="img/work-shirogitsune.jpg" aria-label="白狐伝説ポスター作品を拡大表示">
+            <img src="img/work-shirogitsune.jpg" alt="湯田温泉の白狐伝説をテーマにしたポスター" loading="lazy">
+          </button>
+          <div class="work__meta">
+            <span class="work__tag">Graphic / Poster</span>
+            <h3 class="work__title">白狐伝説ポスター</h3>
+            <p class="work__desc">湯田温泉に伝わる白狐の物語をテーマにしたポスター。縦書きの題字と写真で土地の物語性を表現しました。</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="works__more reveal">
+        <a href="works.html" class="more-link">
+          <span class="more-link__label">Show More</span>
+          <span class="more-link__sub">すべての作品を見る</span>
+          <span class="more-link__arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="section__index" aria-hidden="true">05</span>
+        <h2 class="section__title">Contact</h2>
+        <span class="section__sub">お問い合わせ</span>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p>ご相談・ご感想など、お気軽にどうぞ。</p>
+          <a class="contact__mail" href="mailto:miyahikaru25@gmail.com">miyahikaru25@gmail.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="#top" class="back-to-top" aria-label="ページトップへ">&uarr;</a>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="閉じる">&times;</button>
+    <img id="lightboxImg" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
