@@ -755,18 +755,6 @@ main { display: block; }
 .site-footer__dots i:nth-child(1) { background: var(--blue); transform: rotate(12deg); }
 .site-footer__dots i:nth-child(2) { background: var(--orange); transform: rotate(-10deg); }
 .site-footer__dots i:nth-child(3) { background: var(--pink); transform: rotate(20deg); }
-.site-footer__mark {
-  display: grid;
-  place-items: center;
-  width: 48px; height: 48px;
-  font-family: var(--disp);
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
-  background: var(--blue);
-  border-radius: 14px;
-  box-shadow: 0 4px 14px rgba(41, 100, 246, .4);
-}
 .site-footer__name {
   font-family: var(--disp);
   font-weight: 900;
