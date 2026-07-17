@@ -3,24 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Works｜宮本 輝 Portfolio</title>
+  <title>作品一覧｜宮本 輝 Portfolio</title>
   <meta name="description" content="宮本 輝の全制作物。Webデザイン、ポスター、ロゴ、キャラクターデザインの作品一覧です。">
-  <meta name="theme-color" content="#1c1815">
+  <meta name="theme-color" content="#2964f6">
+
+  <meta property="og:title" content="作品一覧｜宮本 輝 Portfolio">
+  <meta property="og:description" content="Web / Graphic Design Portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://miyahikaru25-lab.github.io/miyamotoportfolio/works.html">
+  <meta property="og:image" content="https://miyahikaru25-lab.github.io/miyamotoportfolio/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232964f6'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='700'%3E輝%3C/text%3E%3C/svg%3E">
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <a class="brand" href="index.html#top" aria-label="ホームへ">
-      <span class="brand__seal" aria-hidden="true">H</span>
-      <span class="brand__name">Hikaru&nbsp;Miyamoto</span>
+      <span class="brand__mark" aria-hidden="true">輝</span>
+      <span class="brand__name">宮本 輝</span>
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="メニューを開く">
@@ -29,42 +41,40 @@
 
     <nav class="nav" id="primaryNav" aria-label="メインナビゲーション">
       <ul>
-        <li><a href="index.html#top">Top</a></li>
-        <li><a href="index.html#about">Profile</a></li>
-        <li><a href="index.html#skill">Skill</a></li>
-        <li><a href="works.html" aria-current="page" class="is-current">Works</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#top">トップ</a></li>
+        <li><a href="index.html#about">プロフィール</a></li>
+        <li><a href="index.html#skill">スキル</a></li>
+        <li><a href="works.html" aria-current="page" class="is-current">作品</a></li>
+        <li><a href="index.html#contact">連絡先</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- ============ PAGE HEAD ============ -->
+  <main id="main">
     <section class="section works-page">
       <a href="index.html#works" class="backlink reveal">&larr; <span>ホームに戻る</span></a>
 
-      <div class="section__head works-page__head">
-        <span class="section__index" aria-hidden="true"></span>
-        <h1 class="section__title">Works</h1>
-        <span class="section__sub">制作物の一覧</span>
+      <div class="section__head reveal">
+        <h1 class="section__title">作品<span class="section__en">Works</span></h1>
       </div>
       <p class="works-page__lead reveal">
         学校の課題や自主学習、コンテストを中心に取り組んだ作品をピックアップした作品一覧です。ポスター・ロゴ・キャラクター・Web まで、
         ジャンルを横断してつくっています。画像をクリックすると拡大表示でき、サイトの場合は直接サイトへ飛ぶことができます。
       </p>
 
-      <!-- ============ WORK LIST ============ -->
+      <!-- ============ WORK LIST（コンパクトな行形式） ============ -->
       <div class="work-rows">
 
-        <article class="work-row reveal">
-          <a class="work-row__link" href="https://miyahikaru25-lab.github.io/Hinogu/" target="_blank" rel="noopener" aria-label="文房具セレクトショップサイト「日の具」を開く">
-            <img src="img/work-hinogu.png" alt="文房具セレクトショップサイト「日の具」のファーストビュー">
+        <article class="work-row reveal" id="w-hinogu">
+          <a class="work-row__media" style="--tint:#eae6e3" href="https://miyahikaru25-lab.github.io/Hinogu/" target="_blank" rel="noopener" aria-label="文房具セレクトショップサイト「日の具」を開く">
+            <span class="work-row__frame"><img src="img/work-hinogu.webp" alt="文房具セレクトショップサイト「日の具」のファーストビュー"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </a>
           <div class="work-row__body">
-<span class="work__tag">Web / Coding</span>
+            <p class="work-row__label"><span class="work-row__no">No.01</span><span class="tagpill">Web / Coding</span></p>
             <h2 class="work-row__title">文房具セレクトショップサイト「日の具」</h2>
             <p class="work-row__desc">
-              「日々を彩る絵の具」をコンセプトにした、文房具・生活雑貨のセレクトショップサイト。月〜日の7曜日それぞれに古赤・水浅葱といった和の伝統色を割り当て、サイトを開いた曜日によってアクセントカラーが自動で切り替わる仕組みを実装しました。品揃えだけでなく、訪れるたびに表情の変わるサイト自体を楽しんでもらえるよう設計しています。<br>※ 店舗案内ページと読みものの詳細ページは、実装パターンを示す代表例として各1ページのみ制作しています。
+              「日々を彩る絵の具」をコンセプトにした、文房具・生活雑貨のセレクトショップサイト。月〜日の7曜日それぞれに古赤・水浅葱といった和の伝統色を割り当て、サイトを開いた曜日によってアクセントカラーが自動で切り替わる仕組みを実装しました。品揃えだけでなく、訪れるたびに表情の変わるサイト自体を楽しんでもらえるよう設計しています。
             </p>
             <dl class="work-row__meta">
               <div><dt>Category</dt><dd>Web Design / Coding</dd></div>
@@ -75,12 +85,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <a class="work-row__link" href="https://miyahikaru25-lab.github.io/toki/index.html" target="_blank" rel="noopener" aria-label="架空日本酒ブランドサイト「刻-TOKI」を開く">
-            <img src="img/toki.png" alt="架空日本酒ブランドサイト「刻-TOKI」のファーストビュー">
+        <article class="work-row reveal" id="w-toki">
+          <a class="work-row__media" style="--tint:#f7f4f6" href="https://miyahikaru25-lab.github.io/toki/index.html" target="_blank" rel="noopener" aria-label="架空日本酒ブランドサイト「刻-TOKI」を開く">
+            <span class="work-row__frame"><img src="img/toki.webp" alt="架空日本酒ブランドサイト「刻-TOKI」のファーストビュー"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </a>
           <div class="work-row__body">
-<span class="work__tag">Web / Coding</span>
+            <p class="work-row__label"><span class="work-row__no">No.02</span><span class="tagpill">Web / Coding</span></p>
             <h2 class="work-row__title">架空日本酒ブランドサイト「刻-TOKI」</h2>
             <p class="work-row__desc">
               架空の日本酒ブランド「刻 -TOKI-」のブランドサイトを、デザインから実装まで制作しました。墨黒と金を基調に和の落ち着きと高級感を表現し、コーディングではAIも取り入れながら細部まで自分で仕上げています。
@@ -94,12 +105,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <a class="work-row__link" href="https://miyahikaru25-lab.github.io/Matcha/" target="_blank" rel="noopener" aria-label="架空お茶ブランドサイトを開く">
-            <img src="img/final_hero.png" alt="架空のお茶ブランドのWebサイト『深みが違う、本物の抹茶』のファーストビュー">
+        <article class="work-row reveal" id="w-matcha">
+          <a class="work-row__media" style="--tint:#e0e3de" href="https://miyahikaru25-lab.github.io/Matcha/" target="_blank" rel="noopener" aria-label="架空お茶ブランドサイトを開く">
+            <span class="work-row__frame"><img src="img/final_hero.webp" alt="架空のお茶ブランドのWebサイト『深みが違う、本物の抹茶』のファーストビュー"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </a>
           <div class="work-row__body">
-<span class="work__tag">Web / Coding</span>
+            <p class="work-row__label"><span class="work-row__no">No.03</span><span class="tagpill">Web / Coding</span></p>
             <h2 class="work-row__title">架空お茶ブランドのサイト</h2>
             <p class="work-row__desc">
               架空の抹茶ブランドのランディングページを、デザインから実装まで一貫して制作しました。抹茶を意識した緑の配色と高級感の両立を重視しました。
@@ -113,12 +125,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <button class="work-row__thumb" data-full="img/work-rethink.jpg" aria-label="Rethinkデザインコンテスト作品を拡大表示">
-            <img src="img/work-rethink.jpg" alt="Rethinkデザインコンテスト応募ポスター『風が描いた台地／水が刻んだ記憶』">
+        <article class="work-row reveal" id="w-rethink">
+          <button class="work-row__media work-row__thumb" style="--tint:#e1fbfb" data-full="img/work-rethink.webp" aria-label="Rethinkデザインコンテスト作品を拡大表示">
+            <span class="work-row__frame"><img src="img/work-rethink.webp" alt="Rethinkデザインコンテスト応募ポスター『風が描いた台地／水が刻んだ記憶』"></span>
+            <span class="work__action" aria-hidden="true">拡大して見る +</span>
           </button>
           <div class="work-row__body">
-<span class="work__tag">Graphic / Poster</span>
+            <p class="work-row__label"><span class="work-row__no">No.04</span><span class="tagpill tagpill--g">Graphic / Poster</span></p>
             <h2 class="work-row__title">Rethink デザインコンテスト</h2>
             <p class="work-row__desc">
               地形と水の記憶をテーマにした観光ポスター。上下を反転させた構図で“地と水”をひと続きに見せ、
@@ -133,12 +146,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <button class="work-row__thumb" data-full="img/syutan.png" aria-label="周南大学マスコット作品を拡大表示">
-            <img src="img/syutan.png" alt="周南大学マスコットキャラクター案『しゅうたん』">
+        <article class="work-row reveal" id="w-syutan">
+          <button class="work-row__media work-row__thumb" style="--tint:#f4ecde" data-full="img/syutan.png" aria-label="周南大学マスコット作品を拡大表示">
+            <span class="work-row__frame"><img src="img/syutan.png" alt="周南大学マスコットキャラクター案『しゅうたん』"></span>
+            <span class="work__action" aria-hidden="true">拡大して見る +</span>
           </button>
           <div class="work-row__body">
-<span class="work__tag">Character / Branding</span>
+            <p class="work-row__label"><span class="work-row__no">No.05</span><span class="tagpill tagpill--p">Character / Branding</span></p>
             <h2 class="work-row__title">大学マスコット「しゅうたん」</h2>
             <p class="work-row__desc">
               大学マスコットのキャラクター案。学びをテーマにしたモチーフを取り入れつつ、
@@ -153,12 +167,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <button class="work-row__thumb" data-full="img/Dress Fashion Show 2026.png" aria-label="ドレスファッションショーポスターを拡大表示">
-            <img src="img/Dress Fashion Show 2026.png" alt="ドレスファッションショー2026のポスター">
+        <article class="work-row reveal" id="w-dress">
+          <button class="work-row__media work-row__thumb" style="--tint:#d8d9dd" data-full="img/dress-fashion-2026.webp" aria-label="ドレスファッションショーポスターを拡大表示">
+            <span class="work-row__frame"><img src="img/dress-fashion-2026.webp" alt="ドレスファッションショー2026のポスター"></span>
+            <span class="work__action" aria-hidden="true">拡大して見る +</span>
           </button>
           <div class="work-row__body">
-<span class="work__tag">Graphic / Poster</span>
+            <p class="work-row__label"><span class="work-row__no">No.06</span><span class="tagpill tagpill--g">Graphic / Poster</span></p>
             <h2 class="work-row__title">ドレスファッションショー 2026 ポスター</h2>
             <p class="work-row__desc">
               ドレスファッションショーのポスター制作。
@@ -172,12 +187,13 @@
           </div>
         </article>
 
-        <article class="work-row reveal">
-          <button class="work-row__thumb" data-full="img/work-shirogitsune.jpg" aria-label="白狐伝説ポスター作品を拡大表示">
-            <img src="img/work-shirogitsune.jpg" alt="湯田温泉の白狐伝説をテーマにしたポスター">
+        <article class="work-row reveal" id="w-kitsune">
+          <button class="work-row__media work-row__thumb" style="--tint:#f0f4f6" data-full="img/work-shirogitsune.webp" aria-label="白狐伝説ポスター作品を拡大表示">
+            <span class="work-row__frame"><img src="img/work-shirogitsune.webp" alt="湯田温泉の白狐伝説をテーマにしたポスター"></span>
+            <span class="work__action" aria-hidden="true">拡大して見る +</span>
           </button>
           <div class="work-row__body">
-<span class="work__tag">Graphic / Poster</span>
+            <p class="work-row__label"><span class="work-row__no">No.07</span><span class="tagpill tagpill--g">Graphic / Poster</span></p>
             <h2 class="work-row__title">白狐伝説ポスター</h2>
             <p class="work-row__desc">
               山口県山口市の湯田温泉に伝わる白狐の物語を題材にしたポスター。土地に根ざした物語性を前面に出しました。
@@ -192,9 +208,25 @@
         </article>
 
       </div>
-
     </section>
   </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span class="site-footer__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="site-footer__mark" aria-hidden="true">輝</span>
+      <p class="site-footer__name">宮本 輝<span>Hikaru Miyamoto</span></p>
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="index.html#top">トップ</a>
+        <a href="index.html#about">プロフィール</a>
+        <a href="index.html#skill">スキル</a>
+        <a href="works.html">作品</a>
+        <a href="index.html#contact">連絡先</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 Hikaru Miyamoto</p>
+    </div>
+  </footer>
 
   <a href="index.html#top" class="back-to-top" aria-label="ホームトップへ">&uarr;</a>
 

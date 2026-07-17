@@ -1,8 +1,10 @@
-// 宮本 輝 Portfolio — interactions
+/* =========================================================
+   宮本 輝 Portfolio — interactions
+   ========================================================= */
 (function () {
   "use strict";
 
-  /* ---- モバイルナビの開閉 ---- */
+  // /* ---- モバイルナビの開閉 ---- */
   const toggle = document.getElementById("navToggle");
   const nav = document.getElementById("primaryNav");
 

@@ -5,27 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>宮本 輝｜Portfolio — Web / Graphic Design</title>
   <meta name="description" content="宮本 輝のポートフォリオ。Webデザイン、ポスターなどの制作物を掲載しています。">
-  <meta name="theme-color" content="#1c1815">
+  <meta name="theme-color" content="#2964f6">
 
-  <!-- OGP（SNSでシェアされたときの表示。本番ではURLと画像を実在のものに） -->
+  <!-- OGP（SNSでシェアされたときの表示）※別のURLに公開する場合は og:url と og:image のドメインを変更 -->
   <meta property="og:title" content="宮本 輝｜Portfolio">
   <meta property="og:description" content="Web / Graphic Design Portfolio">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://miyahikaru25-lab.github.io/miyamotoportfolio/">
+  <meta property="og:image" content="https://miyahikaru25-lab.github.io/miyamotoportfolio/img/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232964f6'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='700'%3E輝%3C/text%3E%3C/svg%3E">
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
 </head>
 <body>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
 
   <!-- ============ HEADER ============ -->
   <header class="site-header" id="siteHeader">
     <a class="brand" href="#top" aria-label="ホームへ">
-      <span class="brand__seal" aria-hidden="true">H</span>
-      <span class="brand__name">Hikaru&nbsp;Miyamoto</span>
+      <span class="brand__mark" aria-hidden="true">輝</span>
+      <span class="brand__name">宮本 輝</span>
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="メニューを開く">
@@ -34,41 +42,55 @@
 
     <nav class="nav" id="primaryNav" aria-label="メインナビゲーション">
       <ul>
-        <li><a href="#top">Top</a></li>
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#top">トップ</a></li>
+        <li><a href="#about">プロフィール</a></li>
+        <li><a href="#skill">スキル</a></li>
+        <li><a href="works.html">作品</a></li>
+        <li><a href="#contact">連絡先</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+
+  <main id="main">
     <!-- ============ HERO / TOP ============ -->
     <section class="hero" id="top">
+      <div class="hero__deco" aria-hidden="true">
+        <span class="deco deco--tile"></span>
+        <span class="deco deco--ring"></span>
+        <span class="deco deco--dot"></span>
+        <span class="deco deco--tile2"></span>
+        <span class="deco deco--spark"></span>
+        <span class="deco deco--cross"></span>
+        <span class="deco deco--confetti1"></span>
+        <span class="deco deco--confetti2"></span>
+        <span class="deco deco--confetti3"></span>
+      </div>
+      <p class="hero__eyebrow reveal" style="--d:.05s">Portfolio <em>— Web &amp; Graphic Design</em></p>
+
       <h1 class="hero__title">
-        <span class="reveal" style="--d:.05s">Hikaru Miyamoto</span>
-        <span class="reveal" style="--d:.15s">Portfolio</span>
+        <span class="hero__ja reveal" style="--d:.14s">宮本 輝</span>
+        <span class="hero__en reveal" style="--d:.26s">Hikaru Miyamoto</span>
       </h1>
-      <p class="hero__lead reveal" style="--d:.3s">
+
+      <p class="hero__lead reveal" style="--d:.38s">
         山口の専門学校でデザインとコーディングを学ぶ、宮本 輝のポートフォリオです。<br>
-        ポスター・ブランディング・Webなど授業や自主学習、コンテストに向けてつくったものを並べています。
+        ポスター・ブランディング・Webなど、授業や自主学習、コンテストに向けてつくったものを並べています。
       </p>
-      <a class="hero__cta reveal" style="--d:.4s" href="#works">作品を見る <span aria-hidden="true">&darr;</span></a>
+
+      <a class="hero__cta reveal" style="--d:.46s" href="#works">作品を見る <span aria-hidden="true">&darr;</span></a>
     </section>
 
     <!-- ============ ABOUT ============ -->
     <section class="section about" id="about">
-      <div class="section__head">
-        <span class="section__index" aria-hidden="true"></span>
-        <h2 class="section__title">Profile</h2>
-        <span class="section__sub">プロフィール</span>
+      <div class="section__head reveal">
+        <h2 class="section__title">プロフィール<span class="section__en">Profile</span></h2>
       </div>
       <div class="about__grid">
-        <div class="about__photo">
-          <img src="img/MiyamotoHikaru.jpg" alt="宮本 輝のプロフィール写真">
+        <div class="about__photo reveal">
+          <img src="img/miyamoto-hikaru.webp" alt="宮本 輝のプロフィール写真">
         </div>
-        <div class="about__body">
-          <p class="about__name">宮本&nbsp;輝 / <span class="about__romaji">Hikaru&nbsp;Miyamoto</span></p>
+        <div class="about__body reveal" style="--d:.12s">
+          <p class="about__name">宮本&nbsp;輝<span class="about__romaji">Hikaru&nbsp;Miyamoto</span></p>
           <p class="about__text">
             2006年、山口県生まれ。YIC情報ビジネス専門学校で、HTML / CSS・Illustrator・Photoshop など、
             デザインとコーディングの両方を学んでいます。
@@ -77,105 +99,100 @@
             ブランドの世界観づくりと、それを画面の上で動くかたちにすることに興味があります。
             ポスターからWebサイトまで、ジャンルを横断してつくるのが好きです。
           </p>
-
         </div>
       </div>
     </section>
 
     <!-- ============ SKILL ============ -->
     <section class="section skill" id="skill">
-      <div class="section__head">
-        <span class="section__index" aria-hidden="true"></span>
-        <h2 class="section__title">Skill</h2>
-        <span class="section__sub">できること</span>
+      <div class="section__head reveal">
+        <h2 class="section__title">スキル<span class="section__en">Skill</span></h2>
       </div>
 
-      <div class="skill__grid">
-        <article class="skill__card reveal">
-          <h3 class="skill__cat">Design</h3>
-          <ul class="skill__tags">
-            <li>Illustrator</li><li>Photoshop</li><li>Figma</li><li>XD</li>
-          </ul>
-        </article>
-        <article class="skill__card reveal" style="--d:.1s">
-          <h3 class="skill__cat">Coding</h3>
-          <ul class="skill__tags">
-            <li>HTML</li><li>CSS</li><li>JavaScript</li>
-          </ul>
-        </article>
-        <article class="skill__card skill__qual reveal" style="--d:.2s">
-          <h3 class="skill__cat">Qualification</h3>
-          <ul class="skill__qual-list">
-            <li>Webデザイナー検定 ベーシック</li>
-            <li>Webクリエイター能力認定試験 HTML5 エキスパート</li>
-            <li>Illustratorクリエイター能力検定試験 スタンダード</li>
-            <li>色彩検定 3級</li>
-            <li>Photoshopクリエイター能力認定試験 スタンダード</li>
-          </ul>
-        </article>
-
-      </div>
+      <dl class="skill__list">
+        <div class="skill__row reveal">
+          <dt><em>Design</em><span>デザイン</span></dt>
+          <dd>Illustrator ／ Photoshop ／ Figma ／ XD</dd>
+        </div>
+        <div class="skill__row reveal" style="--d:.08s">
+          <dt><em>Coding</em><span>コーディング</span></dt>
+          <dd>HTML ／ CSS ／ JavaScript</dd>
+        </div>
+        <div class="skill__row reveal" style="--d:.16s">
+          <dt><em>Qualification</em><span>資格</span></dt>
+          <dd>
+            <ul class="skill__quals">
+              <li>Webデザイナー検定 ベーシック</li>
+              <li>Webクリエイター能力認定試験 HTML5 エキスパート</li>
+              <li>Illustratorクリエイター能力検定試験 スタンダード</li>
+              <li>色彩検定 3級</li>
+              <li>Photoshopクリエイター能力認定試験 スタンダード</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
     </section>
 
     <!-- ============ WORKS ============ -->
     <section class="section works" id="works">
-      <div class="section__head">
-        <span class="section__index" aria-hidden="true"></span>
-        <h2 class="section__title">Works</h2>
-        <span class="section__sub">制作物</span>
+      <div class="section__head reveal">
+        <h2 class="section__title">作品<span class="section__en">Works</span></h2>
       </div>
 
-      <ul class="works__grid">
+      <ul class="gallery">
         <li class="work reveal">
-          <button class="work__thumb" data-full="img/work-hinogu.png" data-link="https://miyahikaru25-lab.github.io/Hinogu/" aria-label="文房具セレクトショップサイト「日の具」を拡大表示">
-            <img src="img/work-hinogu.png" alt="文房具セレクトショップサイト「日の具」のファーストビュー" loading="lazy">
+          <button class="work__thumb" data-full="img/work-hinogu.webp" data-link="https://miyahikaru25-lab.github.io/Hinogu/" aria-label="文房具セレクトショップサイト「日の具」を開く" style="--tint:#eae6e3">
+            <span class="work__frame"><img src="img/work-hinogu.webp" alt="文房具セレクトショップサイト「日の具」のファーストビュー" loading="lazy"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </button>
-          <div class="work__meta">
-            <span class="work__tag">Web / Coding</span>
+          <div class="work__caption">
+                        <span class="work__tag">Web / Coding</span>
             <h3 class="work__title">文房具セレクトショップサイト「日の具」</h3>
             <p class="work__desc">「日々を彩る絵の具」がコンセプトの文房具セレクトショップサイト。曜日ごとに和の伝統色を割り当て、開いた日によってアクセントカラーが変わる仕掛けをデザインから実装まで制作しました。</p>
           </div>
         </li>
 
-        <li class="work reveal" style="--d:.08s">
-          <button class="work__thumb" data-full="img/toki.png" data-link="https://miyahikaru25-lab.github.io/toki/index.html" aria-label="架空日本酒ブランドサイト「刻-TOKI」を拡大表示">
-            <img src="img/toki.png" alt="架空日本酒ブランドサイト「刻-TOKI」のファーストビュー" loading="lazy">
+        <li class="work reveal" style="--d:.1s">
+          <button class="work__thumb" data-full="img/toki.webp" data-link="https://miyahikaru25-lab.github.io/toki/index.html" aria-label="架空日本酒ブランドサイト「刻-TOKI」を開く" style="--tint:#f7f4f6">
+            <span class="work__frame"><img src="img/toki.webp" alt="架空日本酒ブランドサイト「刻-TOKI」のファーストビュー" loading="lazy"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </button>
-          <div class="work__meta">
-            <span class="work__tag">Web / Coding</span>
+          <div class="work__caption">
+                        <span class="work__tag">Web / Coding</span>
             <h3 class="work__title">架空日本酒ブランドサイト「刻-TOKI」</h3>
             <p class="work__desc">架空の日本酒ブランドのブランドサイトをデザインから実装まで制作しました。</p>
           </div>
         </li>
 
-        <li class="work reveal" style="--d:.16s">
-          <button class="work__thumb" data-full="img/final_hero.png" data-link="https://miyahikaru25-lab.github.io/Matcha/" aria-label="架空のお茶ブランドサイトを拡大表示">
-            <img src="img/final_hero.png" alt="架空のお茶ブランドのWebサイト『深みが違う、本物の抹茶』のファーストビュー" loading="lazy">
+        <li class="work reveal">
+          <button class="work__thumb" data-full="img/final_hero.webp" data-link="https://miyahikaru25-lab.github.io/Matcha/" aria-label="架空のお茶ブランドサイトを開く" style="--tint:#e0e3de">
+            <span class="work__frame"><img src="img/final_hero.webp" alt="架空のお茶ブランドのWebサイト『深みが違う、本物の抹茶』のファーストビュー" loading="lazy"></span>
+            <span class="work__action" aria-hidden="true">サイトを見る &nearr;</span>
           </button>
-          <div class="work__meta">
-            <span class="work__tag">Web / Coding</span>
+          <div class="work__caption">
+                        <span class="work__tag">Web / Coding</span>
             <h3 class="work__title">架空お茶ブランドのサイト</h3>
             <p class="work__desc">抹茶ブランドのLPをデザインから実装まで。和の余白と写真で高級感を表現しました。</p>
           </div>
         </li>
 
-        <li class="work reveal" style="--d:.24s">
-          <button class="work__thumb" data-full="img/work-rethink.jpg" aria-label="Rethinkデザインコンテスト作品を拡大表示">
-            <img src="img/work-rethink.jpg" alt="Rethinkデザインコンテスト応募ポスター『風が描いた台地／水が刻んだ記憶』" loading="lazy">
+        <li class="work reveal" style="--d:.1s">
+          <button class="work__thumb" data-full="img/work-rethink.webp" aria-label="Rethinkデザインコンテスト作品を拡大表示" style="--tint:#e1fbfb">
+            <span class="work__frame"><img src="img/work-rethink.webp" alt="Rethinkデザインコンテスト応募ポスター『風が描いた台地／水が刻んだ記憶』" loading="lazy"></span>
+            <span class="work__action" aria-hidden="true">拡大して見る +</span>
           </button>
-          <div class="work__meta">
-            <span class="work__tag">Graphic / Poster</span>
+          <div class="work__caption">
+                        <span class="work__tag work__tag--g">Graphic / Poster</span>
             <h3 class="work__title">Rethink デザインコンテスト</h3>
             <p class="work__desc">地形と水の記憶をテーマにした観光ポスター。上下反転の構図で地と水を一枚に。</p>
           </div>
         </li>
-
       </ul>
 
       <div class="works__more reveal">
         <a href="works.html" class="more-link">
-          <span class="more-link__label">Show More</span>
-          <span class="more-link__sub">すべての作品を見る</span>
+          <span class="more-link__label">すべての作品を見る</span>
+          <span class="more-link__sub"><em>Show More</em></span>
           <span class="more-link__arrow" aria-hidden="true">&rarr;</span>
         </a>
       </div>
@@ -183,20 +200,34 @@
 
     <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
-      <div class="section__head">
-        <span class="section__index" aria-hidden="true"></span>
-        <h2 class="section__title">Contact</h2>
-        <span class="section__sub">お問い合わせ</span>
+      <div class="section__head reveal">
+        <h2 class="section__title">連絡先<span class="section__en">Contact</span></h2>
       </div>
 
-      <div class="contact__grid">
-        <div class="contact__intro">
-          <p>ご相談・ご感想など、お気軽にどうぞ。</p>
-          <a class="contact__mail" href="mailto:miyahikaru25@gmail.com">miyahikaru25@gmail.com</a>
-        </div>
+      <div class="contact__box reveal">
+        <span class="contact__spark" aria-hidden="true"></span>
+        <p class="contact__intro">ご相談・ご感想など、お気軽にどうぞ。</p>
+        <a class="contact__mail" href="mailto:miyahikaru25@gmail.com">miyahikaru25@gmail.com</a>
       </div>
     </section>
   </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <span class="site-footer__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="site-footer__mark" aria-hidden="true">輝</span>
+      <p class="site-footer__name">宮本 輝<span>Hikaru Miyamoto</span></p>
+      <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+        <a href="#top">トップ</a>
+        <a href="#about">プロフィール</a>
+        <a href="#skill">スキル</a>
+        <a href="works.html">作品</a>
+        <a href="#contact">連絡先</a>
+      </nav>
+      <p class="site-footer__copy">&copy; 2026 Hikaru Miyamoto</p>
+    </div>
+  </footer>
 
   <a href="#top" class="back-to-top" aria-label="ページトップへ">&uarr;</a>
 
