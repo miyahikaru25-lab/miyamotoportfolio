@@ -1,52 +1,38 @@
-@charset "UTF-8";
-
-/* =========================================================
-   DESIGN TOKENS
-   コンセプト：真面目感のあるポップ。
-   信頼感のある青を主役に、丸ゴシック・丸み・軽やかな動きで
-   「きちんとしているけど、親しみやすい」トーンをつくる。
-   作品は淡い台紙にトリミングせず展示（index の見せ方を継承）。
-   ========================================================= */
+@charset "UTF-8"; /* 変数 */
 :root {
-  /* color */
-  --blue:      #2964f6;   /* メインの青（信頼＋元気） */
-  --blue-deep: #1d54e8;   /* ホバー・強調 */
-  --blue-soft: #e2ebff;   /* 淡い青（ピル・帯） */
-  --ink:       #17233f;   /* 文字（紺寄りの黒） */
-  --muted:     #5a6478;   /* 補助テキスト */
-  --bg:        #f5f7fb;   /* 地色（青みがかった白） */
+  --blue: #2964f6; /* メインカラー */
+  --blue-deep: #1d54e8; /* 濃い青 */
+  --blue-soft: #e2ebff; /* うすい青 */
+  --ink: #17233f; /* 文字色 */
+  --muted: #5a6478; /* 補助テキスト */
+  --bg: #f5f7fb; /* 背景 */
 
-  /* 賑やかし用アクセント（テキストは必ず -text、背景は -soft を使う） */
-  --orange:      #ffb020;
+  /* アクセント色。文字には-textの方を使う */
+  --orange: #ffb020;
   --orange-soft: #ffedca;
   --orange-text: #8f4d00;
-  --pink:        #ff6fae;
-  --pink-soft:   #ffe8f3;
-  --pink-text:   #b81b66;
-  --green:       #22b877;
-  --green-soft:  #dcf6ea;
-  --green-text:  #0a6e46;
-  --paper:     #ffffff;   /* カード・台紙 */
-  --line:      #dce3f0;   /* 罫線 */
+  --pink: #ff6fae;
+  --pink-soft: #ffe8f3;
+  --pink-text: #b81b66;
+  --green: #22b877;
+  --green-soft: #dcf6ea;
+  --green-text: #0a6e46;
+  --paper: #ffffff; /* カード背景 */
+  --line: #dce3f0; /* 罫線 */
 
-  /* type */
-  --disp: "Zen Maru Gothic", "Noto Sans JP", sans-serif; /* 見出し：丸ゴシック */
-  --sans: "Noto Sans JP", system-ui, sans-serif;          /* 本文 */
+  --disp: "Zen Maru Gothic", "Noto Sans JP", sans-serif; /* 見出し用 */
+  --sans: "Noto Sans JP", system-ui, sans-serif; /* 本文 */
 
-  /* layout */
   --maxw: 1120px;
   --gut: clamp(20px, 5vw, 64px);
   --header-h: 66px;
-  --r: 18px;              /* 基本の角丸 */
+  --r: 18px; /* 角丸 */
 
-  /* motion */
   --ease: cubic-bezier(.2, .7, .2, 1);
   --bounce: cubic-bezier(.34, 1.56, .64, 1);
 }
 
-/* =========================================================
-   BASE — 淡い青のドットで、ポップだけど静かな下地
-   ========================================================= */
+/* 共通 */
 body {
   font-family: var(--sans);
   color: var(--ink);
@@ -58,7 +44,7 @@ body {
 main { display: block; }
 ::selection { background: var(--blue); color: #fff; }
 
-/* 共通セクション */
+/* 各セクション共通 */
 .section {
   max-width: var(--maxw);
   margin-inline: auto;
@@ -66,7 +52,7 @@ main { display: block; }
   padding-block: clamp(72px, 12vw, 140px);
 }
 
-/* セクション見出し：日本語が主役、青い点と英語ピルを添える */
+/* セクション見出し */
 .section__head { margin-bottom: clamp(40px, 6vw, 68px); }
 .section__title {
   display: flex;
@@ -110,9 +96,7 @@ main { display: block; }
   transform: translateY(.15em);
 }
 
-/* =========================================================
-   SKIP LINK
-   ========================================================= */
+/* スキップリンク */
 .skip-link {
   position: fixed;
   top: 10px; left: 10px;
@@ -127,9 +111,7 @@ main { display: block; }
 }
 .skip-link:focus-visible { transform: none; }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
+/* ヘッダー */
 .site-header {
   position: sticky;
   top: 0;
@@ -209,9 +191,7 @@ main { display: block; }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* =========================================================
-   HERO — 青のマーカーが引かれた名前
-   ========================================================= */
+/* メインビジュアル */
 .hero {
   position: relative;
   max-width: var(--maxw);
@@ -220,7 +200,7 @@ main { display: block; }
   overflow: hidden;
 }
 
-/* 右上にふわりと浮かぶ装飾（ポップの気配。数は少なく、動きはゆっくり） */
+/* メインビジュアルの飾り */
 .hero__deco { position: absolute; inset: 0; pointer-events: none; }
 .deco { position: absolute; display: block; }
 .deco--tile {
@@ -261,7 +241,7 @@ main { display: block; }
   animation: float-b 10s ease-in-out .5s infinite;
 }
 
-/* キラッと（4角スター） */
+/* 星 */
 .deco--spark {
   top: 26%; right: 6%;
   width: clamp(22px, 2.8vw, 34px);
@@ -282,7 +262,7 @@ main { display: block; }
   transform: rotate(10deg);
   animation: float-a 9s ease-in-out .8s infinite;
 }
-/* 紙吹雪（タイトルの左上あたりに散らす小さな粒） */
+/* 紙吹雪 */
 .deco--confetti1,
 .deco--confetti2,
 .deco--confetti3 {
@@ -307,7 +287,7 @@ main { display: block; }
   50%      { translate: 0 12px; }
 }
 
-/* バッジ（きちんとした名札） */
+/* 上のバッジ */
 .hero__eyebrow {
   display: inline-block;
   font-family: var(--disp);
@@ -329,8 +309,7 @@ main { display: block; }
   font-family: var(--disp);
   font-weight: 900;
   font-size: clamp(3.2rem, 12.5vw, 7.4rem);
-  letter-spacing: .05em;
-  /* 青のマーカー */
+  letter-spacing: .05em; /* 名前のマーカー線 */
   background: linear-gradient(transparent 64%, rgba(41, 100, 246, .32) 64%, rgba(41, 100, 246, .32) 96%, transparent 96%);
   padding-inline: .06em;
   margin-inline: -.06em;
@@ -378,9 +357,7 @@ main { display: block; }
 }
 .hero__cta:hover span { transform: translateY(3px); }
 
-/* =========================================================
-   ABOUT
-   ========================================================= */
+/* プロフィール */
 .about__grid {
   display: grid;
   grid-template-columns: minmax(0, 300px) 1fr;
@@ -432,9 +409,7 @@ main { display: block; }
 .about__text { color: var(--muted); margin-bottom: 1.1rem; line-height: 2.1; }
 .about__text:last-child { margin-bottom: 0; }
 
-/* =========================================================
-   SKILL — 白いカードの3段（丸み＋青見出し）
-   ========================================================= */
+/* スキル */
 .skill__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -512,16 +487,14 @@ main { display: block; }
   background: color-mix(in srgb, var(--accent, var(--blue)) 18%, #fff);
 }
 
-/* =========================================================
-   WORKS（index）— 淡い台紙にトリミングせず展示
-   ========================================================= */
+/* 作品（トップ） */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(36px, 5vw, 56px);
 }
 .gallery > li { min-width: 0; }
-/* 偶数番目を下げてリズムを出す */
+/* 偶数は少し下げる */
 .gallery > li:nth-child(even) { margin-top: clamp(2.5rem, 6vw, 5rem); }
 
 .work__thumb {
@@ -559,7 +532,7 @@ main { display: block; }
 .work__thumb:hover .work__frame img,
 .work__thumb:focus-visible .work__frame img { transform: scale(1.025); }
 
-/* ホバーで行き先を示すチップ */
+/* ホバーで出るボタン */
 .work__action {
   position: absolute;
   right: 14px; bottom: 14px;
@@ -611,9 +584,7 @@ main { display: block; }
 }
 .work__desc { font-size: .9rem; color: var(--muted); line-height: 1.95; }
 
-/* =========================================================
-   SHOW MORE
-   ========================================================= */
+/* もっと見るボタン */
 .works__more {
   margin-top: clamp(44px, 6vw, 72px);
   display: flex;
@@ -667,9 +638,7 @@ main { display: block; }
 .more-link:hover .more-link__sub { color: rgba(255, 255, 255, .78); }
 .more-link:hover .more-link__arrow { transform: translateX(6px); }
 
-/* =========================================================
-   CONTACT — 青いカードで、明るくきちんと締める
-   ========================================================= */
+/* お問い合わせ */
 .contact__box {
   position: relative;
   display: grid;
@@ -681,7 +650,7 @@ main { display: block; }
   border-radius: calc(var(--r) + 8px);
   overflow: hidden;
 }
-/* カードの角にも小さな装飾 */
+/* 角の飾り */
 .contact__box::before,
 .contact__box::after {
   content: "";
@@ -730,9 +699,7 @@ main { display: block; }
   box-shadow: 0 14px 30px rgba(41, 100, 246, .4);
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+/* フッター */
 .site-footer {
   background: var(--ink);
   color: #e9edf6;
@@ -792,9 +759,7 @@ main { display: block; }
   color: rgba(233, 237, 246, .58);
 }
 
-/* =========================================================
-   BACK TO TOP
-   ========================================================= */
+/* ページトップへ戻る */
 .back-to-top {
   position: fixed;
   bottom: 2rem;
@@ -813,9 +778,7 @@ main { display: block; }
 }
 .back-to-top:hover { background: var(--blue); color: #fff; transform: translateY(-3px); }
 
-/* =========================================================
-   LIGHTBOX
-   ========================================================= */
+/* 画像の拡大表示 */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -851,9 +814,7 @@ main { display: block; }
 }
 .lightbox__close:hover { background: rgba(255, 255, 255, .15); }
 
-/* =========================================================
-   SCROLL REVEAL
-   ========================================================= */
+/* スクロールで表示 */
 .reveal {
   opacity: 0;
   transform: translateY(22px);
@@ -862,9 +823,7 @@ main { display: block; }
 }
 .reveal.is-visible { opacity: 1; transform: none; }
 
-/* =========================================================
-   WORKS PAGE — コンパクトな行形式（画像｜テキスト）
-   ========================================================= */
+/* 作品一覧ページ */
 .backlink {
   display: inline-flex;
   align-items: center;
@@ -988,9 +947,7 @@ main { display: block; }
 }
 .work-row__meta dd { font-size: .88rem; line-height: 1.8; }
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* レスポンシブ */
 @media (max-width: 900px) {
   .about__grid { grid-template-columns: 1fr; }
   .about__photo { max-width: 280px; }
@@ -1002,7 +959,7 @@ main { display: block; }
 @media (max-width: 720px) {
   :root { --header-h: 60px; }
 
-  /* backdrop-filterはfixed要素の基準になるため、モバイルでは解除 */
+  /* スマホだとblurでメニューがずれるのでオフ */
   .site-header {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
@@ -1034,7 +991,7 @@ main { display: block; }
   .contact__spark { scale: .8; }
 }
 
-/* さらに狭い画面では、大きい装飾を消して粒だけ残す */
+/* 狭い画面は飾りを減らす */
 @media (max-width: 520px) {
   .deco--tile, .deco--ring, .deco--spark { display: none; }
   .gallery { grid-template-columns: 1fr; gap: 48px; }
@@ -1042,9 +999,7 @@ main { display: block; }
   .hero__lead br { display: none; }
 }
 
-/* =========================================================
-   REDUCED MOTION
-   ========================================================= */
+/* 動きを減らす設定 */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: .01ms !important;
@@ -1058,7 +1013,7 @@ main { display: block; }
 
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 16px); }
 
-/* キーボードフォーカス */
+/* フォーカスの枠線 */
 :focus-visible {
   outline: 2.5px solid var(--blue);
   outline-offset: 3px;

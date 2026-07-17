@@ -1,10 +1,7 @@
-/* =========================================================
-   宮本 輝 Portfolio — interactions
-   ========================================================= */
 (function () {
   "use strict";
 
-  // /* ---- モバイルナビの開閉 ---- */
+  // モバイルメニュー
   const toggle = document.getElementById("navToggle");
   const nav = document.getElementById("primaryNav");
 
@@ -30,7 +27,7 @@
     if (e.key === "Escape") closeNav();
   });
 
-  /* ---- スクロールで要素をふわっと表示 ---- */
+  // スクロールしたらふわっと表示
   const targets = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver(function (entries, obs) {
@@ -46,7 +43,7 @@
     targets.forEach(function (el) { el.classList.add("is-visible"); });
   }
 
-  /* ---- 作品のライトボックス ---- */
+  // 作品画像の拡大表示
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
   const lightboxClose = document.getElementById("lightboxClose");
@@ -87,7 +84,7 @@
     if (e.key === "Escape" && lightbox.classList.contains("is-open")) closeLightbox();
   });
 
-  /* ---- ヘッダーをスクロールで少し締める ---- */
+  // スクロール中はヘッダーに影をつける
   const header = document.getElementById("siteHeader");
   window.addEventListener("scroll", function () {
     const y = window.scrollY;
