@@ -559,7 +559,7 @@ main { display: block; }
 
 .work__caption { padding-top: 1.2rem; }
 .work__tag--g, .tagpill--g { color: var(--orange-text) !important; background: var(--orange-soft) !important; }
-.tagpill--p { color: var(--pink-text) !important; background: var(--pink-soft) !important; }
+.work__tag--p, .tagpill--p { color: var(--pink-text) !important; background: var(--pink-soft) !important; }
 .work__tag,
 .tagpill {
   display: inline-block;
@@ -898,13 +898,6 @@ main { display: block; }
   align-items: center;
   gap: .8rem;
   margin-bottom: .7rem;
-}
-.work-row__no {
-  font-family: var(--disp);
-  font-weight: 900;
-  font-size: .95rem;
-  letter-spacing: .08em;
-  color: var(--blue);
 }
 .work-row__label .tagpill { margin-bottom: 0; }
 
